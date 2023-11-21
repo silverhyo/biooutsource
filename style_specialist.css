@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    /* 아래에 flex 넣으면 description에 글 썼을 때 flex-row로 되어 오른쪽으로 나타난다. */
+    display: block;
+    /* align-items: center;
+    justify-content: center; */
+    /* gap: 50px; */
+    color: black;
+    background-color: #FFF100;
+}
+
+.subject {
+    padding: 30px 20px 0 20px;
+    position: relative;
+}
+
+.contents {
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 50px;
+}
+
+li {
+    list-style: none;
+    /* list-style-type: square disc circle; list 앞에 붙은 표시의 모양 */
+}
+.list {
+    margin-left: 30px;
+}
+
+.subject01 {
+    /* border: 1px solid black; */
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    height : 250px;
+    background-color: black;
+    color: white;
+}
+
+.aaa {
+    margin: 35px 0 0 0px;
+}
+
+td {
+    padding: 5px;
+}
+
+.photo01 {
+    /* border: 1px solid white; */
+    /* border-radius: 20px; */
+    width : 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    
+   
+}
+
+.description {
+    border: 1px solid black;
+    /* width: 100%; 기본적으로 block은 100% 이므로 별도의 width값을 주지 않는 것이 좋음 */
+    /* height: 1fr; */
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
