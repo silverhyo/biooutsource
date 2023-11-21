@@ -23,16 +23,38 @@ html, body {
 
 .subject {
     padding: 30px 20px 0 20px;
-    /* position: relative;
-} */
+}
 
-.contents {
+.content {
     border: 1px solid black;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 0.9em;
 }
 
 .ollist {
     margin-left: 20px;
+}
+
+.content_box_02 {
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.word {
+    font-weight: 800;
+    font-size: 0.9em;
+}
+
+.ddm {
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+.tablebox {
+    width: 100%;
+    /* text-align: center; td안의 내용물을 td칸의 중간에 배치하여 th와 세로 정렬되게 끔 만들 수 있다. */
+    text-align: center;
 }
