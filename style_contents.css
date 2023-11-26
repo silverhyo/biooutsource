@@ -9,21 +9,58 @@ html, body {
     height: 100vh;
 }
 
+body {
+    background-color: #FFF100;
+}
+
+/* border 묶음 */
+.logo, .logo_image_box, .slide, .subject, .content05 {
+    border: 1px solid black;
+}
+
 .container {
     width: 100%;
     height: 100vh;
+    
+}
+
+.logo {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+/* animation-name이 같은 것이 있으면 안된다. 중복을 피하자! */
+.logo_image_box {
+    position: absolute;
+    width: 130px;
+    margin-left: 20px;
+    top: 30%;
+    overflow: hidden;
+    animation-duration: 3s;
+    animation-name: slidein_logo;    
+}
+
+@keyframes slidein_logo {
+    from {
+        margin-left: 20%;
+        width: 130px;
+    }
+
+    to {
+        margin-left: 20px;
+        width: 130px;
+    }
 }
 
 .slide {
     width: 100%;
-    height: 100vh;
     /* 아래에 flex 넣으면 description에 글 썼을 때 flex-row로 되어 오른쪽으로 나타난다. */
     display: block;
     /* align-items: center;
     justify-content: center; */
     /* gap: 50px; */
-    color: black;
-    background-color: #FFF100;
 }
 
 .subject {
@@ -48,7 +85,7 @@ li {
 /* 애니메이션 효과 */
 .bbb {
     margin-top: 50px;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-name: slidein;
     /* animation-delay: ; 엘리먼트가 로드되고 나서 언제 애니메이션이 시작될지 지정 */
     /* animation-direction: alternate; 애니메이션이 종료되고 다시 처음부터 시작할지 역방향으로 진행할지 지정 */
@@ -76,10 +113,24 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+}
+
+
+
+.menu {
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+   background-color: black;
+   color: white;
+   padding: 5px;
 }
 
 a:hover {
     color: red;
     font-weight: 700;
+}
+
+a:visited {
+    color: white;
 }

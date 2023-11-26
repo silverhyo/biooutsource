@@ -1,0 +1,52 @@
+
+/* input 요소 중 id 값에 answer를 포함하고 있는 input 만을 전부 선택할 수 있다 */
+input[id*="answer"] {
+    display: none;
+}
+
+input[id*="answer"] + label {
+    display: block;
+    padding: 20px;
+    border: 0px solid red;
+    /* 아래의  border-bottom 이 위의 border 위에 놓여있다면 우선순위에 따라 border-bottom 적용이 되지 않는다 */
+    border-bottom: 0;
+    color: black;
+    font-weight: 900;
+    background-color: #fff100;
+    cursor: pointer;
+    position: relative;
+}
+
+input[id*="answer"] + label em {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    display: inline-block;
+    background: url('') 0 0 no-repeat;
+}
+
+input[id*="answer"] + label + div {
+    max-height: 1px;
+    transition: all .35s;
+    overflow: hidden;
+    background-color: green;
+    font-size: 11px;
+}
+
+input[id*="answer"] + label + div p {
+    display: inline-block;
+    padding: 20px;
+}
+
+/* 여기서부터가 중요해 */
+
+input[id*="answer"]:checked + label + div {
+    max-height: 100px;
+}
+
+input[id*="answer"]:checked + label em {
+    background-position: 0 -30px;
+}
