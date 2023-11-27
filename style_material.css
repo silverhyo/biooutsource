@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     width: 100%;
+    background-color: #404040;
 }
 
 /* 테두리 관련하여 한데 모으기 */
@@ -13,16 +14,12 @@ html, body {
     border: 1px solid black;
 }
 
-/* Padding 관련 한데 모으기 */
 
-/* Margin 관련 한데 모으기 */
-.title_a, .slide {
-    margin: 30px 20px 0 20px;
-}
 
 
 .container {
-    width: 100%;
+    width: 1fr;
+    margin: 10px;
     /* height: 300vh;     */
 }
 
@@ -91,7 +88,7 @@ html, body {
 .sartorius_info {
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 10px;
     width: 300px;
     height: 70px;
     color: black;
@@ -100,7 +97,7 @@ html, body {
 .sartorius_box {
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     width: 130px;
     
 }

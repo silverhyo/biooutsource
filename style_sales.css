@@ -4,32 +4,17 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     width: 100%;
+    background-color: #404040;
 }
 
 /* 테두리 관련하여 한데 모으기 */
-.content, .content_box_02, .content_box_08, .smallbox, .logo, .logo_image_box{
-    border: 1px solid black;
+.content, .content_box_02, .content_box_08, .smallbox, .logo, .logo_image_box, .container {
+    border: 0.5px solid black;
 }
 
-/* Padding 관련 한데 모으기 */
-.content {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 
-.container {
-    width: 100%;
-    height: 300vh;    
-}
-
-.slide {
-    width: 1fr;
-    margin: 30px 20px 0px 20px;
-    color: black;
-    background-color: white;
-}
 
 .logo {
     position: relative;
@@ -37,6 +22,9 @@ html, body {
     height: 60px;
     background-color: #FFF100;
 }
+
+
+/* 애니메이션 */
 .logo_image_box {
     position: absolute;
     width: 130px;
@@ -59,9 +47,30 @@ html, body {
     }
 }
 
+.container {
+    width: 1fr;
+    margin: 10px;
+}
+
+.subjectbox {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.contentbox {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+    background-color: white;
+}
+
 .content {
     width: 100%;
-    margin-top: 30px;
+    margin-bottom: 50px;
     font-size: 0.9em;
 }
 
@@ -69,11 +78,7 @@ html, body {
     margin-left: 20px;
 }
 
-.content_box_02 {
-    width: 100%;
-    margin-top: 20px;
-    font-size: 0.9em;
-}
+
 
 .word {
     font-weight: 800;
